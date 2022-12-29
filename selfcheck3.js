@@ -1,12 +1,9 @@
-//100 ~999까지 암스트롱 수의 숫자 출력하기
-for(let i = 1; i <10; i++){
-    for(let k = 0; k < 10; k++ ){
-        for(let j = 0 ; j < 10; j++){
-            let sum = (i * i * i) + (k * k * k) + (j * j * j);
-            let currentNumber = (i * 100) + (k * 10) + j ;
-            if (sum === currentNumber){
-                console.log(currentNumber)
-            }
-        }
-    }
+//체질량 지수 구하기
+function getBMI(height,weight){
+    const h = height/100 ;
+    const bmi = weight / (h*h);
+    if(bmi > 25) return "비만"
+    else if(bmi > 24 && bmi <=25) return "과체중"
+    else if(bmi > 18.5 && bmi <=25) return "정상"
+    else return "저체중";
 }

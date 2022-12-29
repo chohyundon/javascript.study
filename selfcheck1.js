@@ -1,6 +1,6 @@
-// 숫자 1~999까지 짝수 갯수
-let count = 0;
-for(let i = 1; i <= 999; i++){
-    if(i % 2 === 0) count++;
+//원의 넓이 구하는 함수
+function circle (radius){
+   return result =   radius * radius * 3.14;
 }
-console.log(`짝수 개수는 ${count}개 입니다.`);
+const area = circle(1);
+console.log(`원의 넓이 : ${area}`);
