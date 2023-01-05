@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassList</title>
+<style>
+    .red-color{
+        color : red;
+    }
+    .fz20{
+        font-size: 20px;
+    }
+</style>
+</head>
+<body>
+    <p id="text" class="styleSet1">text</p>
+    <script>
+        const pE1 = document.querySelector('#text');
+        // pE1.classList.add("styleSet1");
+        // pE1.classList.remove("styleSet1"); //클래스의 속성값이 사라진다
+        setInterval(()=> {
+            pE1.classList.toggle("styleSet1"); //속성값이 존재할시는 없애고 없을시에 추가한다
+        }, 1000);
+    </script>
+</body>
+</html>  
