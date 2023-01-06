@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File upload</title>
+</head>
+<body>
+    <form name="frm">
+        <input type="file" name="upload">
+    </form>
+    <scirpt>
+        const filesObj = document.frm.upload.files;
+        files[0].name 
+        files[0].size 
+        files[0].type;
+        files[0].lastModifiedDate; //파일 마지막 수정일
+        console.log(filesObj);
+    </scirpt>
+</body>
+</html>

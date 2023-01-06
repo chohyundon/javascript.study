@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node 추가하기</title>
+</head>
+<body>
+    <!-- <h1>text</h1> -->
+    <p>text</p>
+    <p>text</p>
+    <p>text</p>
+    <p>text</p>
+    <script>
+        const aE1 = document.createElement("a"); //요소 노드를 생성
+        const textNode = document.createTextNode("링크");
+        const hrefAttr = document.createAttribute("href");
+
+        hrefAttr.value = 'https://www.github.com';
+        aE1.setAttributeNode(hrefAttr);
+        aE1.appendChild(textNode);
+        document.body.appendChild(aE1);
+    
+        // //식제
+        // const hE1 = document.querySelector('h1');
+        // hE1.parentNode.removeChild(hE1);
+        //여러개 중복 삭제
+        const pE1= document.querySelectorAll('p');
+        pE1.forEach((el) => {
+            e1.parentNode.removeChild(e1)
+        });
+    </script>
+</body>
+</html>
